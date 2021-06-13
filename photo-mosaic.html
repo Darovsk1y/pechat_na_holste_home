@@ -112,7 +112,10 @@
 							<ol class="details-constr__ul">
 								<li class="details-constr__li">
 									<h4 class="details-constr__title title_2 _num">Выберите фото</h4>
-									<input type="file" name="file" data-error="Выберите фото" class="input input_file _req" accept="image/jpeg">
+									<div class="details-constr__file">
+										<input type="file" id="formImage" name="file" data-error="Выберите фото" class="input input_file _req" accept="image/jpeg">
+										<div class="details-constr__button">Выбрать фото</div>
+									</div>
 								</li>
 								<li class="details-constr__li">
 									<h4 class="details-constr__title title_2 _num">Выберите размер (см)</h4>
@@ -242,8 +245,12 @@
 								<div class="visual-constr__item item-visual">
 									<div class="item-visual__row">
 										<div class="item-visual__column item-visual__one">
-											<div class="item-visual__image">
-												<a href="#" class="item-visual__photo btn btn btn_1">Выбрать фото</a>
+											<div class="item-visual__image"> <!-- Еще крепится файл -->
+												<div class="item-visual__file">
+													<input type="file" id="formImage_1" name="file" data-error="Выберите фото" class="input input_file _req" accept="image/jpeg">
+													<a href="#" class="item-visual__photo btn btn btn_1">Выбрать фото</a>
+												</div>
+												<div id="formPreview" class="item-visual__file-preview"></div>
 											</div>
 										</div>
 										<div class="item-visual__column item-visual__two">
